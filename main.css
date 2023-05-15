@@ -14,101 +14,138 @@
 body {
     // background:mintcream;
 
-background: -webkit-linear-gradient(-8deg, rgb(118, 237, 22), rgb(164, 57, 211));
-background: linear-gradient(-8deg, rgb(118, 237, 22), rgb(164, 57, 211));v
-    max-width: 90vw;
+    background: -webkit-linear-gradient(-8deg, rgb(118, 237, 22), rgb(164, 57, 211));
+    background: linear-gradient(-8deg, rgb(118, 237, 22), rgb(164, 57, 211));
+    v max-width: 90vw;
     margin: 0 auto;
     padding: 1em;
     font-size: 18px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
     padding-top: 2em;
-    color:white;
+    color: white;
 }
+
 h1 {
 
-font-size:3rem;
-text-align: center;
+    font-size: 3rem;
+    text-align: center;
 }
+
 h1:hover {
     font-family: sans-serif;
 }
 
 h3 {
     font-size: 3em;
-    color:red;
+    color: red;
 
 }
-figure, p.quote {
+
+
+blockquote,
+p.quote {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    justify-content: center;    
-    align-items: center;
-    margin: 20px 0;
-
+    width: 50vw;
+    margin: 0 auto;
 
 
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
 cite {
     font-size: 1.4rem;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
     line-height: 1.2em;
+    text-align: center;
 }
+
 img {
     max-width: 94vw;
     width: 400px;
 }
 
-p, li{
+p,
+li {
     font-size: 1.6rem;
     line-height: 1.2em;
-padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 p {
     padding: 1rem 4rem;
 }
-p:nth-child(odd){
+
+p:nth-child(odd) {
     color: blue;
     font-size: 2rem;
     padding: 2rem;
 }
-p::selection{
-    background: yellow;
-    color:black;
-}
-table, th, td {
 
-   text-align: center;
+p::selection {
+    background: yellow;
+    color: black;
+}
+
+table,
+th,
+td {
+
+    text-align: center;
     border: 1px dotted black;
 }
 
-td:nth-child(odd){
+td:nth-child(odd) {
     color: blue;
     font-size: 2rem;
     padding: 2rem;
 }
-td:nth-child(even){
+
+td:nth-child(even) {
     background: blue;
-    color:white;
+    color: white;
     font-size: 2rem;
     padding: 2rem;
 }
-ul{
+
+tag {
+    font-style: italic;
+}
+.villagers {
+    border-left: 6px solid red;
+
+}
+.farmer {
+    border-left: 6px solid blue;
+    
+}
+
+ul {
     display: flex;
     flex-direction: row;
-  
-  justify-content: center;
-  border: 60px dotted yellowgreen;
- 
-   
+
+    justify-content: center;
+    border: 60px dotted yellowgreen;
+
+
 }
+
 ul:hover {
     border: 80px dotted white;
 }
@@ -119,11 +156,12 @@ ul section li {
     font-variant-ligatures: additional-ligatures;
 
 }
-article {
-display: flex;
-flex-direction: column;
 
-justify-content: center;
+article {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 
 }
 
@@ -140,7 +178,7 @@ li {
 
 li:hover {
     background: blue;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
@@ -150,7 +188,7 @@ section {
 
 a:hover {
     background: purple;
-    color:white;
+    color: white;
     font-size: 2em;
     line-height: 1.4em;
 }
@@ -159,7 +197,8 @@ a:visited {
     border: 2px dotted purple
 }
 
-q, blockquote {
+q,
+blockquote {
     background: greenyellow;
     border: 13px dotted firebrick;
     padding: 30px;
@@ -171,55 +210,90 @@ img:hover {
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
 
-    //CSS Code
+
 
     h1 {
-        font-weight:bold;
-        font-size: 200px;
+        font-weight: bold;
+        font-size: 80px;
     }
 
     body {
-        background:red;
-        margin:0 auto;
-        padding:0;
+        background: red;
+        margin: 0 auto;
+        padding: 0;
+   
     }
 
-    ul{
-        
+    blockquote,
+p.quote {
+
+    width: 100vw;
+    
+
+
+}
+
+    ul {
+
         flex-direction: column;
 
     }
 
     ul section:first-child li {
-        background:yellow;
+        background: yellow;
         text-align: center;
         font-size: 4rem;
 
     }
-    p:nth-child(odd){
+
+    p:nth-child(odd) {
         color: white;
         font-size: 2rem;
         padding: 2rem;
     }
 
-    p:nth-child(even){
-      font-weight: bold;
+    p:nth-child(even) {
+        font-weight: bold;
         font-size: 2rem;
         padding: 2rem;
     }
+
     img {
         width: 100%;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
+
     table {
-        background:white;
+        background: white;
     }
+
     footer p {
         font-size: 6rem;
         background: yellowgreen;
-        
+
     }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+
+
+
+    h1 {
+        font-weight: bold;
+        font-size: 80px;
     }
+
+    body {
+        background: red;
+        margin: 0 auto;
+        padding: 0;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ae/Kiso_Ontake.jpg");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+    }
+}
