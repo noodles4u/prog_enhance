@@ -80,6 +80,25 @@ img {
     width: 400px;
 }
 
+#drawing {
+    position: fixed;
+    height: auto;
+    width: 98vw;
+    margin: 0 auto;
+    border: none;
+}
+#drawing:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
 p,
 li {
     font-size: 1.6rem;
@@ -124,7 +143,7 @@ td:nth-child(even) {
     padding: 2rem;
 }
 
-tag {
+span {
     font-style: italic;
 }
 .villagers {
@@ -150,14 +169,14 @@ ul:hover {
     border: 80px dotted white;
 }
 
-ul section li {
+ul div li {
     font-size: 2em;
     font-weight: 900;
     font-variant-ligatures: additional-ligatures;
 
 }
 
-article {
+section {
     display: flex;
     flex-direction: column;
 
@@ -182,7 +201,7 @@ li:hover {
     cursor: pointer;
 }
 
-section {
+div {
     margin: 1rem;
 }
 
@@ -213,7 +232,9 @@ img:hover {
 @media only screen and (max-width: 750px) {
 
 
-
+    #drawing {
+        display: none;
+    }
     h1 {
         font-weight: bold;
         font-size: 80px;
@@ -241,7 +262,7 @@ p.quote {
 
     }
 
-    ul section:first-child li {
+    ul div:first-child li {
         background: yellow;
         text-align: center;
         font-size: 4rem;
@@ -275,6 +296,7 @@ p.quote {
         background: yellowgreen;
 
     }
+   
 }
 
 
